@@ -1,7 +1,7 @@
   
 const { Plugin } = require('powercord/entities');
 
-module.exports = class Mock extends Plugin {
+module.exports = class PowerCroissant extends Plugin {
   startPlugin () {
         document.addEventListener("click",         function play() {
             var audio = new Audio('https://raw.githubusercontent.com/SomeAspy/PowerCroissant/main/croissant%20sound.mp3');
@@ -10,6 +10,5 @@ module.exports = class Mock extends Plugin {
   }
 
   pluginWillUnload () {
-    powercord.api.commands.unregisterCommand('mock');
   }
 };
